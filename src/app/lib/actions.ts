@@ -36,7 +36,7 @@ const sql = postgres(process.env.POSTGRES_URL!, { ssl: "require" });
 const FormSchema = z.object({
   id: z.string(),
   customerId: z.string({
-    error: "Please select a customer.", // use invalid_type_error for the Z version 3 -Z3
+    error: "Please select a customer.", // use invalid_type_error for the Z version3 -Z3
   }),
   amount: z.coerce
     .number()
